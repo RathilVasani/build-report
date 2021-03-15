@@ -15,7 +15,7 @@ steps:
     versionSpec: '>= 2.6'
 - script: |
     gem install rest-client && gem install json
-    ruby get_session_details.rb ${{ parameters.build_id }}
+    ruby get_session_details.rb 84b5553e59a9c73063b2286309b339ca781960da
   displayName: 'Generate build report'
 - task: PublishPipelineArtifact@1
   inputs:
