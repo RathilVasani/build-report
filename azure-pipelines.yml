@@ -10,6 +10,9 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
+- task: BrowserStackConfig@0
+  inputs:
+    BrowserStackServiceEndPoint: 'Bstack Demo'
 - task: UseRubyVersion@0
   inputs:
     versionSpec: '>= 2.6'
